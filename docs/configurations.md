@@ -1,6 +1,6 @@
 Run the application
 
-From the project root
+1. From the project root
     cd infra
 
     run : 
@@ -12,8 +12,7 @@ From the project root
     To stop and remove volumes
         docker compose --env-file .env -f docker-compose.db.yml down -v
     
-
-Connect to DB from Adminer mysql client
+2. Connect to DB from Adminer mysql client
     Open:
         http://localhost:8088
 
@@ -23,11 +22,13 @@ Connect to DB from Adminer mysql client
     Username: root
     Password: root
 
-Connect to mongo 
+3. Connect to mongo 
     Mongo Express
     Open:
         http://localhost:8089
 
-1. Create databases in mysql using sql commands under the mysql/init path 
+4. Create databases in mysql using sql commands under the mysql/init path 
+
+
 
 

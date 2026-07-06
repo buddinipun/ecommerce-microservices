@@ -13,30 +13,33 @@ ecommerce-platform/
 
 Then inside backend:
 
+backend/
+│
+├── pom.xml
+│
+├── libraries/
+│   ├── platform-common/
+│   └── platform-security/
+│
+├── services/
+│   ├── auth-service/
+│   ├── user-service/
+│   ├── product-service/
+│   ├── cart-service/
+│   ├── inventory-service/
+│   ├── order-service/
+│   ├── payment-service/
+│   ├── notification-service/
+│   └── api-gateway/
+│
+└── blueprints/
+    └── service-blueprint/
 
-    backend/
-│
-├── pom.xml                     <-- Parent Maven POM
-│
-├── common/
-│
-├── auth-service/
-│
-├── user-service/
-│
-├── product-service/
-│
-├── cart-service/
-│
-├── inventory-service/
-│
-├── order-service/
-│
-├── payment-service/
-│
-├── notification-service/
-│
-└── api-gateway/
+    Here inside of the backend three seperations (sections) are like defined based on following
+
+    1. Libraries (shared code)
+    2. Services (deployable services)
+    3. Blueprints (templates/documentation)
 
 
    #### Proposed Project Structure ######
