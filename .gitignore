@@ -1,0 +1,22 @@
+# Eclipse / STS
+.metadata/
+.settings/
+.project
+.classpath
+.factorypath
+
+# STS
+.springBeans
+.sts4-cache/
+
+# Build
+target/
+*.jar
+
+# IDE
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
