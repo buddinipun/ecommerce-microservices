@@ -1,15 +1,16 @@
 package exception;
 
-public class ResourceNotFoundException 
+
+public class DuplicateResourceException 
         extends BaseException {
 
 
-    public ResourceNotFoundException(
+    public DuplicateResourceException(
             String message
     ) {
 
         super(
-            ErrorCode.RESOURCE_NOT_FOUND,
+            ErrorCode.DUPLICATE_RESOURCE,
             message
         );
 
