@@ -1,12 +1,22 @@
 package enums.user;
-public enum AddressType {
 
-    HOME,
+import enums.common.LookupEnum;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
 
-    OFFICE,
+@Getter
+@AllArgsConstructor
+public enum AddressType implements LookupEnum {
 
-    BILLING,
+    HOME ("HOME", "Home Address"),
 
-    SHIPPING
+    OFFICE	("OFFICE", "Office Address"),
+
+    BILLING ("BILLING", "Billing Address"),
+
+    SHIPPING ("SHIPPING", "Shipping Address");
+    
+    private final String code;
+	private final String description;
 
 }

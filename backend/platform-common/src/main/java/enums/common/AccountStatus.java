@@ -1,14 +1,38 @@
 package enums.common;
-public enum AccountStatus {
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 
-    PENDING_VERIFICATION,
+@Getter
+@RequiredArgsConstructor
+public enum AccountStatus implements LookupEnum {
 
-    ACTIVE,
+    PENDING_VERIFICATION(
+            "PENDING_VERIFICATION",
+            "Pending Verification"
+    ),
 
-    LOCKED,
+    ACTIVE(
+            "ACTIVE",
+            "Active"
+    ),
 
-    SUSPENDED,
+    LOCKED(
+            "LOCKED",
+            "Locked"
+    ),
 
-    DISABLED
+    SUSPENDED(
+            "SUSPENDED",
+            "Suspended"
+    ),
+
+    DISABLED(
+            "DISABLED",
+            "Disabled"
+    );
+
+    private final String code;
+
+    private final String description;
 
 }

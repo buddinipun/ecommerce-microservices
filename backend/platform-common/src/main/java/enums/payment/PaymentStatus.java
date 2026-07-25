@@ -1,16 +1,26 @@
 package enums.payment;
-public enum PaymentStatus {
 
-    PENDING,
+import enums.common.LookupEnum;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
 
-    AUTHORIZED,
+@Getter
+@AllArgsConstructor
+public enum PaymentStatus implements LookupEnum {
 
-    PAID,
+    PENDING ("PENDING", "Pending"),
 
-    FAILED,
+    AUTHORIZED ("AUTHORIZED", "Authorized"),
 
-    CANCELLED,
+    PAID ("PAID", "Paid"),
 
-    REFUNDED
+    FAILED ("FAILED", "Failed"),
+
+    CANCELLED ("CANCELLED", "Cancelled"),
+
+    REFUNDED ("REFUNDED", "Refunded");
+    
+    private final String code;	
+	private final String description;
 
 }

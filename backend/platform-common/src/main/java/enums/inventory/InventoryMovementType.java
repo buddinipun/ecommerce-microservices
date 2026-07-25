@@ -1,20 +1,32 @@
 package enums.inventory;
-public enum InventoryMovementType {
 
-    PURCHASE,
+import enums.common.LookupEnum;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 
-    SALE,
+@Getter
+@RequiredArgsConstructor
 
-    RETURN,
+public enum InventoryMovementType implements LookupEnum{
 
-    ADJUSTMENT,
+	PURCHASE("PURCHASE", "purchase"),
 
-    DAMAGE,
+	SALE("SALE", "sale"),
 
-    TRANSFER,
+	RETURN("RETURN", "return"),
 
-    RESERVATION,
+	ADJUSTMENT("ADJUSTMENT", "adjustment"),
 
-    RELEASE
+	DAMAGE("DAMAGE", "damage"),
+
+	TRANSFER("TRANSFER", "transfer"),
+
+	RESERVATION("RESERVATION", "reservation"),
+
+	RELEASE("RELEASE", "release");
+
+	private final String code;
+
+	private final String description;
 
 }

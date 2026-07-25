@@ -1,10 +1,11 @@
 package enums.order;
+import enums.common.LookupEnum;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 
 @Getter
 @RequiredArgsConstructor
-public enum OrderStatus {
+public enum OrderStatus implements LookupEnum {
 
     PENDING("PENDING", "Pending"),
 
