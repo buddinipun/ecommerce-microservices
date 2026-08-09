@@ -10,10 +10,13 @@ import java.util.Map;
 @Builder
 public class ErrorResponse {
 
-
+	private final int status;
+	
     private final boolean success;
 
     private final String errorCode;
+    
+    private final String error;
 
     private final String message;
 

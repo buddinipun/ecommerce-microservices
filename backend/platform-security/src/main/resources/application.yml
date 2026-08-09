@@ -1,0 +1,6 @@
+application:
+  security:
+    jwt:
+      secret: my-super-secret-key
+      access-token-expiration-ms: 900000
+      refresh-token-expiration-ms: 604800000

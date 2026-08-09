@@ -19,4 +19,10 @@ public class JwtConstants {
 
 	public static final String TOKEN_TYPE = "JWT";
 
+	public static final String CLAIM_TOKEN_TYPE = "tokenType";
+
+	public static final String ACCESS_TOKEN = "ACCESS";
+
+	public static final String REFRESH_TOKEN = "REFRESH";
+
 }

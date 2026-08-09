@@ -1,0 +1,6 @@
+application:
+  security:
+    jwt:
+      secret: "this-is-a-test-secret-key-that-is-long-enough-for-hs256"
+      access-token-expiration-ms: 900000
+      refresh-token-expiration-ms: 604800000
